@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG VERSION=3.2.0
+ARG VERSION=3.4.2
 
 RUN apk add --update --no-cache curl ca-certificates && \
 	curl -L https://storage.googleapis.com/kubernetes-release/release/$(curl -s https://storage.googleapis.com/kubernetes-release/release/stable.txt)/bin/linux/amd64/kubectl -o /usr/local/bin/kubectl && \
